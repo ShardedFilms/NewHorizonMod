@@ -132,7 +132,7 @@ public class NHBlocks implements ContentList {
 	
 		//Env
 		quantumField, quantumFieldDeep, quantumFieldDisturbing, metalUnit, metalTower, metalGround, metalGroundQuantum,
-		metalGroundHeat, conglomerateRock, conglomerateWall
+		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone
 		;
 	
 	private static void loadEnv(){
@@ -143,6 +143,11 @@ public class NHBlocks implements ContentList {
 		
 		conglomerateRock = new Floor("conglomerate-rock", 3){{
 			mapColor = Color.valueOf("565557");
+			blendGroup = Blocks.stone;
+		}};
+		
+		siratlaStone = new Floor("siratla-stone", 6){{
+			mapColor = Color.valueOf("272930");
 			blendGroup = Blocks.stone;
 		}};
 		
