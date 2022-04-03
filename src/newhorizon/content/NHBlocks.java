@@ -132,7 +132,7 @@ public class NHBlocks implements ContentList {
 	
 		//Env
 		quantumField, quantumFieldDeep, quantumFieldDisturbing, metalUnit, metalTower, metalGround, metalGroundQuantum,
-		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone, sirataCrystal;
+		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone, siratlaCrystal;
 	
 	private static void loadEnv(){
 		conglomerateWall = new StaticWall("conglomerate-wall"){{
@@ -152,8 +152,8 @@ public class NHBlocks implements ContentList {
 		
 		siratlaCrystal = new Floor("siratla-crystal", 4){{
      		       itemDrop = NHItems.astrolite;
-			mapColor = Color.valueOf("74C2E8");
-   		         playerUnmineable = false;
+		       mapColor = Color.valueOf("74C2E8");
+   		       playerUnmineable = false;
  	       }};
 		
 		metalGroundHeat = new Floor("metal-ground-heat", 3){{
