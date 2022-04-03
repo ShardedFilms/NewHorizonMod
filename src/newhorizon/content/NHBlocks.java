@@ -132,7 +132,7 @@ public class NHBlocks implements ContentList {
 	
 		//Env
 		quantumField, quantumFieldDeep, quantumFieldDisturbing, metalUnit, metalTower, metalGround, metalGroundQuantum,
-		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone, siratlaCrystal;
+		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone, siratlaCrystal, siratlaGlowingStone;
 	
 	private static void loadEnv(){
 		conglomerateWall = new StaticWall("conglomerate-wall"){{
@@ -144,17 +144,6 @@ public class NHBlocks implements ContentList {
 			mapColor = Color.valueOf("565557");
 			blendGroup = Blocks.stone;
 		}};
-		
-		siratlaStone = new Floor("siratla-stone", 6){{
-			mapColor = Color.valueOf("272930");
-			blendGroup = Blocks.stone;
-		}};
-		
-		siratlaCrystal = new Floor("siratla-crystal", 4){{
-     		       itemDrop = NHItems.astrolite;
-		       mapColor = Color.valueOf("74C2E8");
-   		       playerUnmineable = false;
- 	       }};
 		
 		metalGroundHeat = new Floor("metal-ground-heat", 3){{
 			mapColor = Pal.darkerGray.cpy().lerp(NHColor.darkEnr, 0.5f);
@@ -2508,5 +2497,22 @@ public class NHBlocks implements ContentList {
 			size = 1;
 			alwaysUnlocked = true;
 		}};
+		
+		// Genesus
+		
+		siratlaStone = new Floor("siratla-stone", 6){{
+			mapColor = Color.valueOf("272930");
+			blendGroup = Blocks.stone;
+		}};
+		
+		siratlaCrystal = new Floor("siratla-crystal", 4){{
+     		       itemDrop = NHItems.astrolite;
+		       mapColor = Color.valueOf("74C2E8");
+			emitLight = true; 
+			lightRadius = 30f;
+   		       playerUnmineable = false;
+ 	       }};
+		
+		// end g-0
 	}
 }
