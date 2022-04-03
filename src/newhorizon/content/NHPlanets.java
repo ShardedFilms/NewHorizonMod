@@ -95,10 +95,10 @@ public class NHPlanets implements ContentList {
                 Pal.darkestGray
             );
     
-            atmosphereColor = Color.valueOf("74C22E8");
+            atmosphereColor = Color.valueOf("74c2e8");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
-            startSector = 0;
+            startSector = 173;
         }};
     }
     
