@@ -18,6 +18,13 @@ public class NHColor{
 		trail = Color.lightGray.cpy().lerp(Color.gray, 0.65f),
 		thermoPst = Color.valueOf("CFFF87").lerp(Color.white, 0.15f);
 	
+		//Exogenesis are by Sharded... right?
+		
+		cyanBright = Color.valueOf("#99F8FF"),
+		cyanMed = Color.valueOf("#8A8E99"),
+		cyanLow = Color.valueOf("6A97D9"),
+	
+		//How this i made.. well was
 	static{
 		Colors.put("heal", Pal.heal);
 	}
