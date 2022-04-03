@@ -41,7 +41,7 @@ import newhorizon.NewHorizon;
 import static mindustry.Vars.*;
 
 public class NHPlanets implements ContentList {
-    public static Planet midantha;
+    public static Planet midantha, siratla;
 
     @Override
     public void load(){
@@ -74,7 +74,7 @@ public class NHPlanets implements ContentList {
         }};
         
         siratla = new Planet("siratla", Planets.sun, 0.95f, 3) {{
-            generator = new siratlaPlanetGenerator();
+            generator = new SiratlaPlanetGenerator();
             
             bloom = true;
             visible = true;
@@ -82,8 +82,8 @@ public class NHPlanets implements ContentList {
             alwaysUnlocked = true;
             meshLoader = () -> new NHModMesh(
                 this, 6,
-                5, 0.3, 1.7, 1.2, 1.4,
-                1.1f,
+                4, 0.25, 1.8, 1.0, 1.5,
+                1.2f,
                 NHColor.darkEnrFront.cpy().lerp(Color.white, 0.2f),
                 NHColor.darkEnrFront,
                 NHColor.darkEnrColor,
