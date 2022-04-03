@@ -565,7 +565,7 @@ public class NHPlanets implements ContentList {
         }
     }
 
-    public static class SiratlaPlanetGenertor extends PlanetGenerator{
+    public static class SiratlaPlanetGenerator extends PlanetGenerator{
         static final int seed = NewHorizon.class.toString().hashCode();
     
         BaseGenerator basegen = new BaseGenerator();
