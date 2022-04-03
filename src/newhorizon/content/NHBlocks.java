@@ -2519,7 +2519,7 @@ public class NHBlocks implements ContentList {
 			emitLight = true; 
 			lightRadius = 30f;
    		       playerUnmineable = false;
-			lightColor = NHColor.cyanBright;
+			lightColor = NHColor.cyanLow;
  	       }};
 		
 		// end g-0
