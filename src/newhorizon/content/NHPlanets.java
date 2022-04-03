@@ -72,6 +72,34 @@ public class NHPlanets implements ContentList {
             atmosphereRadOut = 0.3f;
             startSector = 0;
         }};
+        
+        siratla = new Planet("siratla", Planets.sun, 0.95f, 3) {{
+            generator = new siratlaPlanetGenerator();
+            
+            bloom = true;
+            visible = true;
+            hasAtmosphere = true;
+            alwaysUnlocked = true;
+            meshLoader = () -> new NHModMesh(
+                this, 6,
+                5, 0.3, 1.7, 1.2, 1.4,
+                1.1f,
+                NHColor.darkEnrFront.cpy().lerp(Color.white, 0.2f),
+                NHColor.darkEnrFront,
+                NHColor.darkEnrColor,
+                NHColor.darkEnrColor.cpy().lerp(Color.black, 0.2f).mul(1.05f),
+                Pal.gray.cpy().lerp(Pal.metalGrayDark, 0.25f).lerp(NHColor.darkEnr, 0.02f),
+                Pal.gray,
+                Pal.darkerGray,
+                Pal.darkestGray.cpy().lerp(Pal.gray, 0.2f),
+                Pal.darkestGray
+            );
+    
+            atmosphereColor = Color.valueOf("74C22E8");
+            atmosphereRadIn = 0.02f;
+            atmosphereRadOut = 0.3f;
+            startSector = 0;
+        }};
     }
     
     public static class NHModPlanetGenerator extends PlanetGenerator{
