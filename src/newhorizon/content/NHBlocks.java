@@ -153,7 +153,7 @@ public class NHBlocks implements ContentList {
 			blendGroup = Blocks.stone;
 		}};
 		
-		siratlaCrystal = new Floor("siratla-crystal"){{
+		siratlaCrystal = new Floor("siratla-crystal", 4){{
      		       itemDrop = NHItems.astrolite;
    		         playerUnmineable = false;
  	       }};
