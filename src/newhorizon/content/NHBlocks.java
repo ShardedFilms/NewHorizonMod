@@ -132,7 +132,7 @@ public class NHBlocks implements ContentList {
 	
 		//Env
 		quantumField, quantumFieldDeep, quantumFieldDisturbing, metalUnit, metalTower, metalGround, metalGroundQuantum,
-		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone
+		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone, sirataCrystal
 		;
 	
 	private static void loadEnv(){
@@ -146,10 +146,19 @@ public class NHBlocks implements ContentList {
 			blendGroup = Blocks.stone;
 		}};
 		
+		// Exogenesis extendion.
+		
 		siratlaStone = new Floor("siratla-stone", 6){{
 			mapColor = Color.valueOf("272930");
 			blendGroup = Blocks.stone;
 		}};
+		
+		siratlaCrystal = new Floor("siratla-crystal"){{
+     		       itemDrop = NHItems.astrolite;
+   		         playerUnmineable = false;
+ 	       }};
+		
+		// end-exo
 		
 		metalGroundHeat = new Floor("metal-ground-heat", 3){{
 			mapColor = Pal.darkerGray.cpy().lerp(NHColor.darkEnr, 0.5f);
