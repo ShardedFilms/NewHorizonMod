@@ -132,8 +132,7 @@ public class NHBlocks implements ContentList {
 	
 		//Env
 		quantumField, quantumFieldDeep, quantumFieldDisturbing, metalUnit, metalTower, metalGround, metalGroundQuantum,
-		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone, sirataCrystal
-		;
+		metalGroundHeat, conglomerateRock, conglomerateWall, siratlaStone, sirataCrystal;
 	
 	private static void loadEnv(){
 		conglomerateWall = new StaticWall("conglomerate-wall"){{
