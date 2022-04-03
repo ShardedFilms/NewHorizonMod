@@ -146,8 +146,6 @@ public class NHBlocks implements ContentList {
 			blendGroup = Blocks.stone;
 		}};
 		
-		// Exogenesis extendion.
-		
 		siratlaStone = new Floor("siratla-stone", 6){{
 			mapColor = Color.valueOf("272930");
 			blendGroup = Blocks.stone;
@@ -155,10 +153,9 @@ public class NHBlocks implements ContentList {
 		
 		siratlaCrystal = new Floor("siratla-crystal", 4){{
      		       itemDrop = NHItems.astrolite;
+			mapColor = Color.valueOf("74C2E8");
    		         playerUnmineable = false;
  	       }};
-		
-		// end-exo
 		
 		metalGroundHeat = new Floor("metal-ground-heat", 3){{
 			mapColor = Pal.darkerGray.cpy().lerp(NHColor.darkEnr, 0.5f);
