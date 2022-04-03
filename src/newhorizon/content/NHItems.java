@@ -12,7 +12,7 @@ public class NHItems implements ContentList{
 	presstanium, seniorProcessor, juniorProcessor,
 	zeta, fusionEnergy, multipleSteel, irayrondPanel,
 	setonAlloy, darkEnergy, upgradeSort, metalOxhydrigen,
-	thermoCorePositive, thermoCoreNegative;
+	thermoCorePositive, thermoCoreNegative, astrolite;
 	
 	@Override
 	public void load(){
@@ -20,6 +20,9 @@ public class NHItems implements ContentList{
 			radioactivity = 2.5f;
 			explosiveness = 3f;
 			charge = 15f;
+		}};
+			astrolite = new Item("astrolite", Color.valueOf("99F8FF")){{
+			charge = 0.1f;
 		}};
 		thermoCoreNegative = new Item("thermo-core-negative", Color.valueOf("#7D95B2")){{
 			explosiveness = 1f;
