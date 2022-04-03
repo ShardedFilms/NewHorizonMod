@@ -2511,7 +2511,7 @@ public class NHBlocks implements ContentList {
 			emitLight = true; 
 			lightRadius = 30f;
    		       playerUnmineable = false;
-			lightColor = NHColor.cyanBright;
+			lightColor = NHColor.cyanBright.cpy().a(0.40f);
  	       }};
 		siratlaGlowingStone = new Floor("glowingstone", 6){{
      		       itemDrop = NHItems.astrolite;
@@ -2519,7 +2519,7 @@ public class NHBlocks implements ContentList {
 			emitLight = true; 
 			lightRadius = 30f;
    		       playerUnmineable = false;
-			lightColor = NHColor.cyanLow;
+			lightColor = NHColor.cyanLow.cpy().a(0.10f);
  	       }};
 		
 		// end g-0
